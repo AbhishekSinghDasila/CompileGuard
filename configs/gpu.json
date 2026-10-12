@@ -1,0 +1,13 @@
+{
+  "profiles": [
+    {"name":"cuda-default","backend":"cuda","command":["nvcc"],"flags":[],"arch":"auto"},
+    {"name":"cuda-device-O0","backend":"cuda","command":["nvcc"],"flags":["-Xptxas=-O0"],"arch":"auto"},
+    {"name":"cuda-memcheck","backend":"cuda","command":["nvcc"],"flags":["-lineinfo"],"arch":"auto","sanitizer":"memcheck"},
+    {"name":"cuda-racecheck","backend":"cuda","command":["nvcc"],"flags":["-lineinfo"],"arch":"auto","sanitizer":"racecheck"},
+    {"name":"cuda-synccheck","backend":"cuda","command":["nvcc"],"flags":["-lineinfo"],"arch":"auto","sanitizer":"synccheck"},
+    {"name":"cuda-initcheck","backend":"cuda","command":["nvcc"],"flags":["-lineinfo"],"arch":"auto","sanitizer":"initcheck"},
+    {"name":"ptx-jit","backend":"ptx-jit","command":["nvcc"],"flags":[],"arch":"auto"},
+    {"name":"ptx-offline","backend":"ptx-cubin","command":["nvcc"],"flags":[],"arch":"auto"},
+    {"name":"direct-ptx","backend":"ptx-direct","command":[],"flags":[],"arch":"auto"}
+  ]
+}

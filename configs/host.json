@@ -1,0 +1,8 @@
+{
+  "profiles": [
+    {"name":"gcc-O0","backend":"cpp","command":["g++"],"flags":["-O0"]},
+    {"name":"gcc-O2","backend":"cpp","command":["g++"],"flags":["-O2"]},
+    {"name":"clang-O0","backend":"cpp","command":["clang++"],"flags":["-O0"]},
+    {"name":"clang-O2","backend":"cpp","command":["clang++"],"flags":["-O2"]}
+  ]
+}

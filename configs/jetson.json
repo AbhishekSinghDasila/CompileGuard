@@ -1,0 +1,7 @@
+{
+  "profiles": [
+    {"name":"jetson-cuda","backend":"cuda","command":["nvcc"],"flags":[],"arch":"auto"},
+    {"name":"jetson-ptx-jit","backend":"ptx-jit","command":["nvcc"],"flags":[],"arch":"auto"},
+    {"name":"jetson-cubin","backend":"ptx-cubin","command":["nvcc"],"flags":[],"arch":"auto"}
+  ]
+}
