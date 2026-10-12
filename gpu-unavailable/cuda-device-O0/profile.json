@@ -1,0 +1,14 @@
+{
+  "name": "cuda-device-O0",
+  "backend": "cuda",
+  "command": [
+    "nvcc"
+  ],
+  "flags": [
+    "-Xptxas=-O0"
+  ],
+  "arch": "auto",
+  "repeat": 2,
+  "compile_timeout": 180,
+  "run_timeout": 30
+}

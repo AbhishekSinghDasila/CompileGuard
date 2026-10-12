@@ -1,0 +1,36 @@
+.version 7.0
+.target sm_75
+.address_size 64
+.visible .entry verify_kernel(.param .u64 input, .param .u64 output, .param .u32 count) {
+    .reg .pred %p;
+    .reg .b32 %r<5>;
+    .reg .b64 %rd<6>;
+    ld.param.u64 %rd0, [input];
+    ld.param.u64 %rd1, [output];
+    ld.param.u32 %r0, [count];
+    mov.u32 %r1, %ctaid.x;
+    mov.u32 %r2, %ntid.x;
+    mov.u32 %r3, %tid.x;
+    mad.lo.u32 %r1, %r1, %r2, %r3;
+    setp.ge.u32 %p, %r1, %r0;
+    @%p bra DONE;
+    mul.wide.u32 %rd2, %r1, 4;
+    add.u64 %rd3, %rd0, %rd2;
+    add.u64 %rd4, %rd1, %rd2;
+    ld.global.u32 %r4, [%rd3];
+    sub.u32 %r4, %r4, 4294967295;
+    xor.b32 %r4, %r4, 0;
+    sub.u32 %r4, %r4, 136505587;
+    sub.u32 %r4, %r4, 2147483647;
+    add.u32 %r4, %r4, 1801823908;
+    shr.u32 %r4, %r4, 0;
+    mul.lo.u32 %r4, %r4, 1461364854;
+    mul.lo.u32 %r4, %r4, 4294967295;
+    sub.u32 %r4, %r4, 0;
+    or.b32 %r4, %r4, 2592983555;
+    add.u32 %r4, %r4, 2303082117;
+    shl.b32 %r4, %r4, 1;
+    st.global.u32 [%rd4], %r4;
+DONE:
+    ret;
+}

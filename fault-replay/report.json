@@ -1,0 +1,144 @@
+{
+  "schema": 2,
+  "engine": "2.0.0",
+  "case_sha256": "25746cc3b83950b6eb42ad1922b509641dd88800957f855f4e6e89d3a3d90bdb",
+  "profile": {
+    "name": "synthetic-shift-sign",
+    "backend": "cpp",
+    "command": [
+      "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\.tools\\zig-x86_64-windows-0.14.1\\zig.exe",
+      "c++"
+    ],
+    "flags": [
+      "-O2"
+    ],
+    "fault": "shift-sign",
+    "arch": "sm_75",
+    "repeat": 3,
+    "compile_timeout": 180,
+    "run_timeout": 30,
+    "compiler_sha256": "1ddf230367e07738c4a769eae66c1db7469e37bd520e81c86356453d0db2b9fd"
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "host_arch": "AMD64",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "synthetic": true,
+  "expected": [
+    2147483647
+  ],
+  "steps": [
+    {
+      "argv": [
+        "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\.tools\\zig-x86_64-windows-0.14.1\\zig.exe",
+        "c++",
+        "--version"
+      ],
+      "timeout": false,
+      "output_limit": false,
+      "stdout_file": "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\evidence\\fault-replay\\compiler-version.stdout",
+      "stderr_file": "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\evidence\\fault-replay\\compiler-version.stderr",
+      "returncode": 0,
+      "stdout": "clang version 19.1.7 (https://github.com/ziglang/zig-bootstrap de1b01a8c1dddf75a560123ac1c2ab182b4830da)\nTarget: x86_64-unknown-windows-gnu\nThread model: posix\nInstalledDir: C:/Users/Abhishek dasila/Documents/Codex/2026-10-12/cr/outputs/compiler-verification-lab/.tools/zig-x86_64-windows-0.14.1\n",
+      "stderr": "",
+      "seconds": 0.125
+    },
+    {
+      "argv": [
+        "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\.tools\\zig-x86_64-windows-0.14.1\\zig.exe",
+        "c++",
+        "-std=c++17",
+        "-O2",
+        "-fno-exceptions",
+        "-fno-rtti",
+        "-nostdlib++",
+        "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\evidence\\fault-replay\\program.cpp",
+        "-o",
+        "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\evidence\\fault-replay\\program.exe"
+      ],
+      "timeout": false,
+      "output_limit": false,
+      "stdout_file": "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\evidence\\fault-replay\\build-0.stdout",
+      "stderr_file": "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\evidence\\fault-replay\\build-0.stderr",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "seconds": 0.312
+    }
+  ],
+  "executions": [
+    {
+      "argv": [
+        "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\evidence\\fault-replay\\program.exe"
+      ],
+      "timeout": false,
+      "output_limit": false,
+      "stdout_file": "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\evidence\\fault-replay\\run-0.stdout",
+      "stderr_file": "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\evidence\\fault-replay\\run-0.stderr",
+      "returncode": 0,
+      "stdout": "4294967295\r\n",
+      "stderr": "",
+      "seconds": 0.75
+    },
+    {
+      "argv": [
+        "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\evidence\\fault-replay\\program.exe"
+      ],
+      "timeout": false,
+      "output_limit": false,
+      "stdout_file": "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\evidence\\fault-replay\\run-1.stdout",
+      "stderr_file": "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\evidence\\fault-replay\\run-1.stderr",
+      "returncode": 0,
+      "stdout": "4294967295\r\n",
+      "stderr": "",
+      "seconds": 0.047
+    },
+    {
+      "argv": [
+        "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\evidence\\fault-replay\\program.exe"
+      ],
+      "timeout": false,
+      "output_limit": false,
+      "stdout_file": "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\evidence\\fault-replay\\run-2.stdout",
+      "stderr_file": "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\evidence\\fault-replay\\run-2.stderr",
+      "returncode": 0,
+      "stdout": "4294967295\r\n",
+      "stderr": "",
+      "seconds": 0.031
+    }
+  ],
+  "started_utc": "2026-10-12T15:17:47Z",
+  "status": "WRONG_RESULT",
+  "seconds": 1.297,
+  "actual": [
+    4294967295
+  ],
+  "differences": [
+    {
+      "index": 0,
+      "expected": 2147483647,
+      "actual": 4294967295
+    }
+  ],
+  "verification_scope": "native-execution",
+  "artifacts": {
+    "build-0.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "build-0.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "case.json": "31f45822d8dbc1160c78e9471fde235fdf57b9ae5a822e7f38936d37ba3a5613",
+    "compiler-version.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "compiler-version.stdout": "e66637416595115cf17a8e7dc5b28695da93d127c3568a8cb7d1c298dd44c63c",
+    "kernel.cu": "db39b66f5a856baf221cc1aa8fa2abcf25310dd1a6c4e2d7fa5a40efe947e6ec",
+    "profile.json": "40861cf88cd9fb5d19e79cd477724c44f01fb50d2fde90fa68625d8babebd49a",
+    "program.cpp": "ed1dffe76e92f65b7c2767d881aef5512addd29fca89b01256145708870ea2f7",
+    "program.cu": "abfcd3a32ab07996d398f6029c0c1a3be3bee21a5676e0abb744274c41d68253",
+    "program.exe": "f49afa41a957ad289fb1dc83b4480c0544952f21c6929e173e99a938d54fa25c",
+    "program.pdb": "1eee40a9c00747f0bfc9fb311dd8eb994dd12f6f0dfffe08039d709456f6128c",
+    "reference.ptx": "d76dd4fc71e5a671e6255911cf81675a86ab14c22bf2c9ddb986b40635add486",
+    "run-0.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "run-0.stdout": "95d6c201a3758d1ff9f216ae6689f0e6a6fa84bfa375760cbd2b32a2cda28c9c",
+    "run-1.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "run-1.stdout": "95d6c201a3758d1ff9f216ae6689f0e6a6fa84bfa375760cbd2b32a2cda28c9c",
+    "run-2.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "run-2.stdout": "95d6c201a3758d1ff9f216ae6689f0e6a6fa84bfa375760cbd2b32a2cda28c9c"
+  },
+  "finding_signature": "cf5dbf84e7ab9663e98cd9d6e326668ed12ca33ddc38fb91c1b73485a5155992"
+}

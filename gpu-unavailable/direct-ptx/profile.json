@@ -1,0 +1,10 @@
+{
+  "name": "direct-ptx",
+  "backend": "ptx-direct",
+  "command": [],
+  "flags": [],
+  "arch": "auto",
+  "repeat": 2,
+  "compile_timeout": 180,
+  "run_timeout": 30
+}

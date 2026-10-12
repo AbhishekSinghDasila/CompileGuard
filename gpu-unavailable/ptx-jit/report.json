@@ -1,0 +1,88 @@
+{
+  "schema": 2,
+  "engine": "2.0.0",
+  "case_sha256": "a1df308d823c7ecdc347d1679e867d0b6e10307e51c6639b752324135cc5f631",
+  "profile": {
+    "name": "ptx-jit",
+    "backend": "ptx-jit",
+    "command": [
+      "nvcc"
+    ],
+    "flags": [],
+    "arch": "auto",
+    "repeat": 2,
+    "compile_timeout": 180,
+    "run_timeout": 30
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "host_arch": "AMD64",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "synthetic": false,
+  "expected": [
+    3385342984,
+    1217157920,
+    2280422648,
+    3385342984,
+    2280422648,
+    266875376,
+    1238135712,
+    1210866576,
+    3528203448,
+    135008800,
+    174854856,
+    298603512,
+    3527955320,
+    1242313416,
+    3383235184,
+    3352048384,
+    3488109312,
+    2454458656,
+    2313696464,
+    164395280,
+    128463352,
+    2318146272,
+    3385341184,
+    308835176,
+    2324452336,
+    271348808,
+    2320249304,
+    3383505792,
+    172498056,
+    2420907192,
+    3494394720,
+    3394008096,
+    128479552
+  ],
+  "steps": [
+    {
+      "argv": [
+        "C:\\Users\\Abhishek dasila\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\compilerlab\\gpu_worker.py",
+        "--probe"
+      ],
+      "timeout": false,
+      "output_limit": false,
+      "stdout_file": "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\evidence\\gpu-unavailable\\ptx-jit\\gpu-probe.stdout",
+      "stderr_file": "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\evidence\\gpu-unavailable\\ptx-jit\\gpu-probe.stderr",
+      "returncode": 3,
+      "stdout": "",
+      "stderr": "Could not find module 'nvcuda.dll' (or one of its dependencies). Try using the full path with constructor syntax.\r\n",
+      "seconds": 0.078
+    }
+  ],
+  "executions": [],
+  "started_utc": "2026-10-12T15:17:49Z",
+  "status": "SKIP_GPU_UNAVAILABLE",
+  "seconds": 0.078,
+  "artifacts": {
+    "case.json": "b67b7f3ba11e23125cec7c6c29f24e29677b2173453f510954c97eafb45c403e",
+    "gpu-probe.stderr": "c00faa7d004c38bcf043769b8004c950821a83d977b3cb7716f5918049632e70",
+    "gpu-probe.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "kernel.cu": "fd24af7098c06a05acb96ccbcaf955671ae16d6d01aa7e8b5c94223112200e5b",
+    "profile.json": "7ccbddcfa56683f793ec8b4146037ef369bf36ac87777cb85272792aeceecf54",
+    "program.cpp": "8cf9b72f59d24bfcd4772e02fe06cd565ad137b096f3588a115b22a4fe4ab12c",
+    "program.cu": "d5f2c6f29ca71af3e0fa04e590c04439f3fb8c8bf314e123341206b82172fae9",
+    "reference.ptx": "509195235ff61225e7befa5832e9d9399cd222a20ffef020f7c364462ae73bb3"
+  },
+  "finding_signature": "16cee4d132863c8b2a9cb456daabc8c45ca1c8c9108ab57f652236246fd45026"
+}

@@ -1,0 +1,12 @@
+{
+  "unit_tests": 26,
+  "native_jobs": 84,
+  "native_cases": 42,
+  "native_passes": 84,
+  "regression_passes": 2,
+  "gpu_skips": 9,
+  "artifact_integrity": "PASS",
+  "resume_no_duplicate_execution": "PASS",
+  "fault_replay": "WRONG_RESULT as expected",
+  "dashboard_links": "PASS"
+}

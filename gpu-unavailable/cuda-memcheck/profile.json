@@ -1,0 +1,15 @@
+{
+  "name": "cuda-memcheck",
+  "backend": "cuda",
+  "command": [
+    "nvcc"
+  ],
+  "flags": [
+    "-lineinfo"
+  ],
+  "arch": "auto",
+  "sanitizer": "memcheck",
+  "repeat": 2,
+  "compile_timeout": 180,
+  "run_timeout": 30
+}

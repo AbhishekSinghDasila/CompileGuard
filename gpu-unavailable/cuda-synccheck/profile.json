@@ -1,0 +1,15 @@
+{
+  "name": "cuda-synccheck",
+  "backend": "cuda",
+  "command": [
+    "nvcc"
+  ],
+  "flags": [
+    "-lineinfo"
+  ],
+  "arch": "auto",
+  "sanitizer": "synccheck",
+  "repeat": 2,
+  "compile_timeout": 180,
+  "run_timeout": 30
+}

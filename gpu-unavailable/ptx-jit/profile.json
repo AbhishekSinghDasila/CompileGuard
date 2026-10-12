@@ -1,0 +1,12 @@
+{
+  "name": "ptx-jit",
+  "backend": "ptx-jit",
+  "command": [
+    "nvcc"
+  ],
+  "flags": [],
+  "arch": "auto",
+  "repeat": 2,
+  "compile_timeout": 180,
+  "run_timeout": 30
+}

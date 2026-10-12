@@ -1,0 +1,15 @@
+{
+  "name": "cuda-initcheck",
+  "backend": "cuda",
+  "command": [
+    "nvcc"
+  ],
+  "flags": [
+    "-lineinfo"
+  ],
+  "arch": "auto",
+  "sanitizer": "initcheck",
+  "repeat": 2,
+  "compile_timeout": 180,
+  "run_timeout": 30
+}

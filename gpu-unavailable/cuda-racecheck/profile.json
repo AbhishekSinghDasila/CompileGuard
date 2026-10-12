@@ -1,0 +1,15 @@
+{
+  "name": "cuda-racecheck",
+  "backend": "cuda",
+  "command": [
+    "nvcc"
+  ],
+  "flags": [
+    "-lineinfo"
+  ],
+  "arch": "auto",
+  "sanitizer": "racecheck",
+  "repeat": 2,
+  "compile_timeout": 180,
+  "run_timeout": 30
+}
