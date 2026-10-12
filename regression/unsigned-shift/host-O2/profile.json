@@ -1,0 +1,16 @@
+{
+  "name": "host-O2",
+  "backend": "cpp",
+  "command": [
+    "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\.tools\\zig-x86_64-windows-0.14.1\\zig.exe",
+    "c++"
+  ],
+  "flags": [
+    "-O2"
+  ],
+  "arch": "sm_75",
+  "repeat": 2,
+  "compile_timeout": 180,
+  "run_timeout": 30,
+  "compiler_sha256": "1ddf230367e07738c4a769eae66c1db7469e37bd520e81c86356453d0db2b9fd"
+}

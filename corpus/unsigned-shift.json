@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "case": {
+    "schema": 1,
+    "kind": "map",
+    "seed": "synthetic-shift-fault",
+    "ops": [
+      [
+        "shr",
+        1
+      ]
+    ],
+    "inputs": [
+      4294967295
+    ]
+  },
+  "expected": [
+    2147483647
+  ],
+  "synthetic": true,
+  "description": "Logical right shift must not sign-extend unsigned values."
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "entry": "unsigned-shift.json",
+    "profile": "host-O0",
+    "status": "PASS"
+  },
+  {
+    "entry": "unsigned-shift.json",
+    "profile": "host-O2",
+    "status": "PASS"
+  }
+]

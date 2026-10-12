@@ -1,0 +1,122 @@
+{
+  "schema": 2,
+  "engine": "2.0.0",
+  "case_sha256": "25746cc3b83950b6eb42ad1922b509641dd88800957f855f4e6e89d3a3d90bdb",
+  "profile": {
+    "name": "host-O0",
+    "backend": "cpp",
+    "command": [
+      "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\.tools\\zig-x86_64-windows-0.14.1\\zig.exe",
+      "c++"
+    ],
+    "flags": [
+      "-O0"
+    ],
+    "arch": "sm_75",
+    "repeat": 2,
+    "compile_timeout": 180,
+    "run_timeout": 30,
+    "compiler_sha256": "1ddf230367e07738c4a769eae66c1db7469e37bd520e81c86356453d0db2b9fd"
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "host_arch": "AMD64",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "synthetic": false,
+  "expected": [
+    2147483647
+  ],
+  "steps": [
+    {
+      "argv": [
+        "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\.tools\\zig-x86_64-windows-0.14.1\\zig.exe",
+        "c++",
+        "--version"
+      ],
+      "timeout": false,
+      "output_limit": false,
+      "stdout_file": "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\evidence\\final-demo\\regression\\unsigned-shift\\host-O0\\compiler-version.stdout",
+      "stderr_file": "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\evidence\\final-demo\\regression\\unsigned-shift\\host-O0\\compiler-version.stderr",
+      "returncode": 0,
+      "stdout": "clang version 19.1.7 (https://github.com/ziglang/zig-bootstrap de1b01a8c1dddf75a560123ac1c2ab182b4830da)\nTarget: x86_64-unknown-windows-gnu\nThread model: posix\nInstalledDir: C:/Users/Abhishek dasila/Documents/Codex/2026-10-12/cr/outputs/compiler-verification-lab/.tools/zig-x86_64-windows-0.14.1\n",
+      "stderr": "",
+      "seconds": 0.157
+    },
+    {
+      "argv": [
+        "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\.tools\\zig-x86_64-windows-0.14.1\\zig.exe",
+        "c++",
+        "-std=c++17",
+        "-O0",
+        "-fno-exceptions",
+        "-fno-rtti",
+        "-nostdlib++",
+        "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\evidence\\final-demo\\regression\\unsigned-shift\\host-O0\\program.cpp",
+        "-o",
+        "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\evidence\\final-demo\\regression\\unsigned-shift\\host-O0\\program.exe"
+      ],
+      "timeout": false,
+      "output_limit": false,
+      "stdout_file": "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\evidence\\final-demo\\regression\\unsigned-shift\\host-O0\\build-0.stdout",
+      "stderr_file": "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\evidence\\final-demo\\regression\\unsigned-shift\\host-O0\\build-0.stderr",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "seconds": 0.312
+    }
+  ],
+  "executions": [
+    {
+      "argv": [
+        "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\evidence\\final-demo\\regression\\unsigned-shift\\host-O0\\program.exe"
+      ],
+      "timeout": false,
+      "output_limit": false,
+      "stdout_file": "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\evidence\\final-demo\\regression\\unsigned-shift\\host-O0\\run-0.stdout",
+      "stderr_file": "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\evidence\\final-demo\\regression\\unsigned-shift\\host-O0\\run-0.stderr",
+      "returncode": 0,
+      "stdout": "2147483647\r\n",
+      "stderr": "",
+      "seconds": 0.516
+    },
+    {
+      "argv": [
+        "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\evidence\\final-demo\\regression\\unsigned-shift\\host-O0\\program.exe"
+      ],
+      "timeout": false,
+      "output_limit": false,
+      "stdout_file": "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\evidence\\final-demo\\regression\\unsigned-shift\\host-O0\\run-1.stdout",
+      "stderr_file": "C:\\Users\\Abhishek dasila\\Documents\\Codex\\2026-10-12\\cr\\outputs\\compiler-verification-lab\\evidence\\final-demo\\regression\\unsigned-shift\\host-O0\\run-1.stderr",
+      "returncode": 0,
+      "stdout": "2147483647\r\n",
+      "stderr": "",
+      "seconds": 0.047
+    }
+  ],
+  "started_utc": "2026-10-12T15:13:44Z",
+  "status": "PASS",
+  "seconds": 1.032,
+  "actual": [
+    2147483647
+  ],
+  "differences": [],
+  "verification_scope": "native-execution",
+  "artifacts": {
+    "build-0.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "build-0.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "case.json": "31f45822d8dbc1160c78e9471fde235fdf57b9ae5a822e7f38936d37ba3a5613",
+    "compiler-version.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "compiler-version.stdout": "e66637416595115cf17a8e7dc5b28695da93d127c3568a8cb7d1c298dd44c63c",
+    "kernel.cu": "0993d7710135e8a91a64ed6c092ba638161a89b26468c821d2c97e99369d163f",
+    "profile.json": "b91a8ee87b79cba13efb4501e97a2bdbf1a8b1aff7566c92d9fe20b69698b9a2",
+    "program.cpp": "e60f72a603d2b376a2550893c6fb40907935c9ab103ccf4eee8bac1bc5651d4d",
+    "program.cu": "e3710003f745f4fb845c417c81b06f23608d717f727aa44a7040011fd3cd19dd",
+    "program.exe": "aba4c4a2abc4b455a38e8442c62a843fe66a61f1c595c8b019171d10af06a19b",
+    "program.pdb": "413f19a24b913a9cbb469ccfbc2c592fb69533e36f9052ee434baeb06b622279",
+    "reference.ptx": "d76dd4fc71e5a671e6255911cf81675a86ab14c22bf2c9ddb986b40635add486",
+    "run-0.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "run-0.stdout": "4e590d66e25520aca068b2896d8b78cadf5e2dba94b545be25a51dd69e32136a",
+    "run-1.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "run-1.stdout": "4e590d66e25520aca068b2896d8b78cadf5e2dba94b545be25a51dd69e32136a"
+  },
+  "finding_signature": "57f942906c6deaccf347345aa4e32feb9bcb9a97bc10049b67182e401723d90f"
+}
